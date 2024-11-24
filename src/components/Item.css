@@ -1,0 +1,245 @@
+.cir {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 10px;
+  border-color: #565656;
+}
+
+.cir img {
+  margin: 1rem;
+  width: auto;
+  z-index: 1000;
+}
+
+/* item position */
+.position-1 {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+.position-2 {
+  position: absolute;
+  left: 27%;
+  bottom: 46%;
+
+}
+
+.position-3 {
+  position: absolute;
+  bottom: 37%;
+  left: 33.5%;
+
+}
+
+.position-4 {
+  position: absolute;
+  top: 28%;
+  left: 62%;
+
+
+}
+
+.position-5 {
+  position: absolute;
+  bottom: 44%;
+  left: 66%;
+
+}
+
+
+/* animation */
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes downUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.position-1,
+.position-2,
+.position-5 {
+  animation: upDown 1.5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.position-3,
+.position-4 {
+  animation: downUp 1.5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.icon {
+  animation: fadeOpacity 3s ease-in-out infinite;
+}
+
+
+@media (max-width: 1536px) {
+  .cir {
+    width: 3.9rem;
+    height: 3.9rem;
+  }
+
+  .position-1 {
+    top: 25%;
+    left: 40%
+  }
+
+  .position-2 {
+    left: 26%;
+    bottom: 46%;
+  }
+
+  .position-3 {
+    bottom: 39%;
+    left: 32%;
+  }
+
+  .position-4 {
+    top: 27%;
+    left: 62%;
+  }
+
+  .position-5 {
+    bottom: 45%;
+    left: 67%;
+  }
+
+}
+
+/* lg (<=1024px) */
+@media (max-width: 1024px) {
+  .cir {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .position-1 {
+    top: 28%;
+    left: 38%;
+  }
+
+  .position-2 {
+    left: 23%;
+    bottom: 47%;
+  }
+
+  .position-3 {
+    bottom: 42%;
+    left: 30%;
+  }
+
+  .position-4 {
+    top: 31%;
+    left: 65%;
+  }
+
+  .position-5 {
+    bottom: 48%;
+    left: 69%;
+  }
+}
+
+/* (<=768px) */
+@media (max-width: 768px) {
+  .cir {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .position-1 {
+    top: 27%;
+    left: 36%;
+  }
+
+  .position-2 {
+    left: 18%;
+    bottom: 50%;
+  }
+
+  .position-3 {
+    bottom: 45%;
+    left: 27%;
+  }
+
+  .position-4 {
+    top: 30.5%;
+    left: 67%;
+  }
+
+  .position-5 {
+    bottom: 50%;
+    left: 71%;
+  }
+}
+
+/*(<=640px)*/
+@media (max-width: 640px) {
+  .cir {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .position-1 {
+    top: 30%;
+    left: 38%;
+  }
+
+  .position-2 {
+    left: 19%;
+    bottom: 52%;
+  }
+
+  .position-3 {
+    bottom: 47.5%;
+    left: 28%;
+  }
+
+  .position-4 {
+    top: 32%;
+    left: 66%;
+  }
+
+  .position-5 {
+    bottom: 51.5%;
+    left: 71%;
+  }
+}
